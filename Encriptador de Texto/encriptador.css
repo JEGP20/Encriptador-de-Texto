@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f4f4fc;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.contenedor-cajatexto{
+    position: relative;
+    border: solid 2px black;
+    top: 5px;
+    width: 65vw;
+    height: 70vh;
+    left: 20px;
+}
+
+.cajatexto{
+    position: absolute;
+    width: 65vw;
+    height: 70vh;
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.cajatexto::placeholder{
+    color: #0A3871;
+}
+
+.alerta{
+    display : flex;
+    flex-direction: row;
+    align-items:  center;
+    gap: 8px;
+    position: absolute;
+    margin: 40px auto auto 30px; 
+    display: flex;
+    color: #495057;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;  
+    top: 570px;
+    height: 80px;
+    margin: 5px auto 0 30px;
+    gap: 10px;
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-desencriptar{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 65px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+    margin: 0.3%;
+    width: 195px;
+    padding: 1.8%;
+}
+
+.seccion2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    left: 70%;
+    top: 5%;
+    padding-right: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.contenedormunieco{
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    box-sizing: border-box;;
+    scale: 0.65;
+}
+
+.contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 15px;
+    position: absolute;
+    text-align: center;
+    top: 310px;
+    left: 40px;
+}
+
+.contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+    padding-right: 25px;
+
+}
+
+.contenedor-parrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+    padding-top: 30px;
+    padding-right: 25px;
+}
+
+.contenedor-resultado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor-resultado p{
+    color: #495057;
+    font-size: 20px;
+
+}
+
+.contenedor-copiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    top: 490px;
+    margin: 0 auto 0 35px;
+}
+
+.btn-copiar{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 65px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.ocultar{
+    display: none;
+}
+
+/* Web Responsive Design */
+
+@media (max-width: 15em) {
+    
+    .seccion1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor-cajatexto{
+        width: 100%;
+    }
+
+    .cajatexto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+
+}
